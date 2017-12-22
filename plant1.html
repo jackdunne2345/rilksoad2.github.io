@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<link rel="stylesheet" href="style2.css"/>
+</head>
+
+
+
+<body onload="startTime()">
+				<script>
+					function startTime() {
+						var today = new Date();
+						var h = today.getHours();
+						var m = today.getMinutes();
+						var s = today.getSeconds();
+						m = checkTime(m);
+						s = checkTime(s);
+						document.getElementById('txt').innerHTML =
+						h + ":" + m + ":" + s;
+						var t = setTimeout(startTime, 500);
+					}
+					function checkTime(i) {
+						if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+						return i;
+					}
+				
+				</script>
+	<div class="fixed">
+			<a href="https://www.facebook.com/Rilk-Soad-135427093798236/">
+					<img src="facebook.png" alt="FB">
+			</a>
+				
+			<a href="https://twitter.com/Rilk_Soad">
+				<img src="twitter.png" alt="TW">
+			</a>
+	
+			
+	
+	</div>
+	
+	
+	
+	<div class="wrapper">
+		
+		<div class="title">
+			
+			<p>
+				<a href="index.html">
+					<img src="title1.png" alt="title">
+				</a>
+			</p>
+			<p class="text">Elephant Foot Yam</p>
+			<p id="txt" class="text" >	 </p>
+			
+		</div>
+		
+		<div class="holder">
+			<div class="image">
+				<img src="page1plant.png" alt="plant1p1">
+				<img src="page1plant.png" alt="plant1p1">
+			</div>
+			<div class="imageRight">
+				<img src="page1plant.png" alt="plant1p1">
+				<img src="page1plant.png" alt="plant1p1">
+			</div>
+			
+			<iframe class="wiki" src="https://en.wikipedia.org/wiki/Amorphophallus_paeoniifolius"></iframe>
+		
+		</div>
+		
+	</div>
+</body>
+
+
+
+
+</html>

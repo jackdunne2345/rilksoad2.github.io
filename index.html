@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		Welcome to my humble shop!
+		</title>
+	
+	
+	
+	</head>
+	<link rel="stylesheet" href="style.css"/>
+	<body onload="startTime()">
+		<div class="wrapper">
+			<div class="title">
+				
+				<p class="left">
+				
+					<img src="title1.png" alt="title">
+				
+				</p>
+				
+				
+				<p class="right" id="welcome"></p>
+				</br>
+				</br>
+				</br>
+				<p id="txt" class="clock">	 </p>
+				
+				
+				<script src="name.js"></script>
+				
+				<script>
+					function startTime() {
+						var today = new Date();
+						var h = today.getHours();
+						var m = today.getMinutes();
+						var s = today.getSeconds();
+						m = checkTime(m);
+						s = checkTime(s);
+						document.getElementById('txt').innerHTML =
+						h + ":" + m + ":" + s;
+						var t = setTimeout(startTime, 500);
+					}
+					function checkTime(i) {
+						if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+						return i;
+					}
+				
+				</script>
+			</div>
+			<div class="fixed">
+				<a href="https://www.facebook.com/Rilk-Soad-135427093798236/">
+					<img  src="facebook.png" alt="FB">
+				</a>
+				
+				<a href="https://twitter.com/Rilk_Soad">
+					<img  src="twitter.png" alt="TW">
+				</a>
+			</div>
+			
+			<div class="holder">
+				
+				<div class="brk">
+				
+				</div>
+				<div class="leftD">
+					<a href="plant1.html">
+						<img src="plant1.png" alt="plant1">
+					</a>
+				</div>
+				
+				
+				
+				<div class="leftD">
+					<a href="plant2.html">
+						<img src="plant2.png" alt="plant2">
+					</a>
+				</div>
+				
+			
+				
+				<div class="leftD">
+					<a href="plant3.html">
+						<img src="plant3.png" alt="plant3">
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="pretty">
+			
+		</div>
+		<div class="pretty2">
+		
+			<a href="pretty.html">
+				<img class="imgpretty" src="pretty.png" alt="pretty">
+			</a>
+		
+		</div>
+		
+	</body>
+</html>
